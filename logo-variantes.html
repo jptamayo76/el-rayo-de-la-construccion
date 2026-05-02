@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Variantes de logo — Construcción y Terminaciones Don Jaime</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --amarillo:#F2B705;
+    --naranjo:#E66A1A;
+    --negro:#111111;
+    --crema:#F5F1E8;
+    --gris:#5a5a5a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Source Sans 3',system-ui,sans-serif;color:var(--negro);background:var(--crema);padding:40px 20px;line-height:1.55}
+  .wrap{max-width:1180px;margin:0 auto}
+  h1{font-family:'Oswald';text-transform:uppercase;font-size:clamp(28px,4vw,42px);line-height:1}
+  h1 .yel{background:var(--negro);color:var(--amarillo);padding:0 10px;display:inline-block;transform:skew(-6deg)}
+  .lead{margin:14px 0 36px;color:var(--gris);max-width:720px}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:'Oswald';text-transform:uppercase;letter-spacing:0.16em;font-size:13px;margin-bottom:8px}
+  .eyebrow::before{content:"";width:36px;height:3px;background:var(--amarillo)}
+
+  .block{background:#fff;border:1px solid #e0d9c5;box-shadow:8px 8px 0 var(--negro);overflow:hidden;margin-bottom:36px}
+  .b-head{padding:18px 22px;border-bottom:2px solid var(--negro);background:var(--crema);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+  .b-head .num{font-family:'Bebas Neue';font-size:42px;line-height:1;color:var(--negro)}
+  .b-head .ttl{font-family:'Oswald';text-transform:uppercase;font-size:18px;letter-spacing:0.1em}
+  .b-head .desc{font-size:14px;color:var(--gris);max-width:500px;text-align:right}
+
+  .logo-rows{display:flex;flex-direction:column;gap:0}
+  .logo-row{padding:38px 30px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px}
+  .logo-row.dark{background:var(--negro)}
+  .logo-row.light{background:#fff;border-top:1px solid #e0d9c5}
+
+  .logoB{display:flex;align-items:stretch;background:var(--negro);box-shadow:6px 6px 0 var(--amarillo);max-width:560px;width:100%;border:2px solid var(--negro)}
+  .logoB .left{padding:14px;display:grid;place-items:center;border-right:3px solid var(--negro);flex:0 0 auto;width:110px;height:110px}
+  .logoB .left img{width:82px;height:82px;object-fit:contain;display:block}
+  .logoB .right{padding:16px 22px;display:flex;flex-direction:column;justify-content:center;flex:1;min-width:0;gap:6px}
+  .logoB .right .l1{font-family:'Oswald';font-size:11px;line-height:1;letter-spacing:0.2em;color:var(--amarillo);text-transform:uppercase;font-weight:600;white-space:nowrap}
+  .logoB .right .l2{font-family:'Bebas Neue';font-size:34px;line-height:1;color:#fff;letter-spacing:0.04em;white-space:nowrap}
+  .logoB .right .l3{font-family:'Source Sans 3';font-size:10px;line-height:1;letter-spacing:0.2em;color:#bdb6a4;margin-top:2px;text-transform:uppercase;white-space:nowrap}
+
+  .light .logoB{background:#fff}
+  .light .logoB .right .l1{color:var(--naranjo)}
+  .light .logoB .right .l2{color:var(--negro)}
+  .light .logoB .right .l3{color:var(--gris)}
+
+  /* Background variants for icon panel */
+  .bg-naranjo{background:var(--naranjo)}
+  .bg-amarillo{background:var(--amarillo)}
+  .bg-negro{background:var(--negro)}
+  .bg-blanco{background:#fff}
+  .light .bg-negro{background:var(--negro)}
+
+  .row-meta{font-family:'Oswald';font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#bdb6a4}
+  .light .row-meta{color:var(--gris)}
+
+  .fav-strip{padding:22px 30px;background:var(--crema);border-top:1px solid #e0d9c5;display:flex;gap:16px;align-items:flex-end;flex-wrap:wrap}
+  .fav-strip .lbl{font-family:'Oswald';font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gris);margin-top:6px;text-align:center}
+  .fav{width:64px;height:64px;display:grid;place-items:center;border:2px solid var(--negro);box-shadow:3px 3px 0 var(--negro);padding:6px}
+  .fav.s32{width:32px;height:32px;box-shadow:2px 2px 0 var(--negro);padding:3px}
+  .fav.s16{width:16px;height:16px;box-shadow:1px 1px 0 var(--negro);border-width:1px;padding:1px}
+  .fav img{width:100%;height:100%;object-fit:contain;display:block}
+  .fav-item{display:flex;flex-direction:column;align-items:center;gap:6px}
+
+  .pick{margin-top:48px;padding:24px 26px;background:var(--negro);color:var(--crema);border-left:8px solid var(--amarillo)}
+  .pick h3{font-family:'Oswald';text-transform:uppercase;color:#fff;margin-bottom:8px}
+  .pick p{color:#cdc6b4;font-size:15px}
+  .pick .keys{margin-top:12px;font-family:'Oswald';font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:var(--amarillo)}
+
+  /* Source preview */
+  .src{padding:22px 30px;background:#fff;border-top:1px solid #e0d9c5;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+  .src img{width:120px;height:120px;object-fit:contain;background:var(--crema);padding:10px;border:1px solid #e0d9c5}
+  .src p{font-size:14px;color:var(--gris);max-width:560px}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <span class="eyebrow">Identidad visual · v3</span>
+  <h1>Logo con <span class="yel">silueta original</span></h1>
+  <p class="lead">Extraje la silueta del obrero directamente del letrero de referencia (sin el rombo ni el borde). Esa silueta exacta se usa ahora en el formato "Cinta de obra · Bloque horizontal" que le gustó. Las variantes a continuación cambian solo el color de fondo del recuadro de la izquierda donde va la figura.</p>
+
+  <!-- ============ FUENTE ============ -->
+  <div class="block">
+    <div class="b-head">
+      <div style="display:flex;align-items:center;gap:18px"><span class="num">00</span><span class="ttl">Silueta extraída del letrero original</span></div>
+      <span class="desc">Sin bordes, sin rombo. Solo la figura del obrero.</span>
+    </div>
+    <div class="src">
+      <img src="assets/obrero.png" alt="Silueta del obrero" />
+      <p>Esta silueta sólida es exactamente la que aparece en el letrero PI-2 ("Trabajos en la Vía") chileno, recortada del fondo. Es la imagen base que va dentro del recuadro de la izquierda en cada variante.</p>
+    </div>
+  </div>
+
+  <!-- ============ VARIANTE 01 — recuadro NARANJO ============ -->
+  <div class="block">
+    <div class="b-head">
+      <div style="display:flex;align-items:center;gap:18px"><span class="num">01</span><span class="ttl">Cinta de obra · Recuadro naranjo de seguridad</span></div>
+      <span class="desc">El color del letrero vial original. Máxima asociación con el referente.</span>
+    </div>
+    <div class="logo-rows">
+      <div class="logo-row dark">
+        <div class="logoB">
+          <div class="left bg-naranjo"><img src="assets/obrero.png" alt="Obrero"/></div>
+          <div class="right">
+            <div class="l1">Construcción y Terminaciones</div>
+            <div class="l2">Don Jaime</div>
+            <div class="l3">Combarbalá · Región de Coquimbo</div>
+          </div>
+        </div>
+        <span class="row-meta">Sobre fondo oscuro</span>
+      </div>
+      <div class="logo-row light">
+        <div class="logoB">
+          <div class="left bg-naranjo"><img src="assets/obrero.png" alt="Obrero"/></div>
+          <div class="right">
+            <div class="l1">Construcción y Terminaciones</div>
+            <div class="l2">Don Jaime</div>
+            <div class="l3">Combarbalá · Región de Coquimbo</div>
+          </div>
+        </div>
+        <span class="row-meta">Sobre fondo claro</span>
+      </div>
+    </div>
+    <div class="fav-strip">
+      <span style="font-family:'Oswald';font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gris);align-self:center;margin-right:8px">Favicon →</span>
+      <div class="fav-item"><div class="fav bg-naranjo"><img src="assets/obrero.png" alt=""/></div><div class="lbl">64px</div></div>
+      <div class="fav-item"><div class="fav s32 bg-naranjo"><img src="assets/obrero.png" alt=""/></div><div class="lbl">32px</div></div>
+      <div class="fav-item"><div class="fav s16 bg-naranjo"><img src="assets/obrero.png" alt=""/></div><div class="lbl">16px</div></div>
+    </div>
+  </div>
+
+  <!-- ============ VARIANTE 02 — recuadro AMARILLO ============ -->
+  <div class="block">
+    <div class="b-head">
+      <div style="display:flex;align-items:center;gap:18px"><span class="num">02</span><span class="ttl">Cinta de obra · Recuadro amarillo seguridad</span></div>
+      <span class="desc">Amarillo de obra (chaleco reflectante). Muy alta visibilidad.</span>
+    </div>
+    <div class="logo-rows">
+      <div class="logo-row dark">
+        <div class="logoB">
+          <div class="left bg-amarillo"><img src="assets/obrero.png" alt="Obrero"/></div>
+          <div class="right">
+            <div class="l1">Construcción y Terminaciones</div>
+            <div class="l2">Don Jaime</div>
+            <div class="l3">Combarbalá · Región de Coquimbo</div>
+          </div>
+        </div>
+        <span class="row-meta">Sobre fondo oscuro</span>
+      </div>
+      <div class="logo-row light">
+        <div class="logoB">
+          <div class="left bg-amarillo"><img src="assets/obrero.png" alt="Obrero"/></div>
+          <div class="right">
+            <div class="l1">Construcción y Terminaciones</div>
+            <div class="l2">Don Jaime</div>
+            <div class="l3">Combarbalá · Región de Coquimbo</div>
+          </div>
+        </div>
+        <span class="row-meta">Sobre fondo claro</span>
+      </div>
+    </div>
+    <div class="fav-strip">
+      <span style="font-family:'Oswald';font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gris);align-self:center;margin-right:8px">Favicon →</span>
+      <div class="fav-item"><div class="fav bg-amarillo"><img src="assets/obrero.png" alt=""/></div><div class="lbl">64px</div></div>
+      <div class="fav-item"><div class="fav s32 bg-amarillo"><img src="assets/obrero.png" alt=""/></div><div class="lbl">32px</div></div>
+      <div class="fav-item"><div class="fav s16 bg-amarillo"><img src="assets/obrero.png" alt=""/></div><div class="lbl">16px</div></div>
+    </div>
+  </div>
+
+  <!-- ============ VARIANTE 03 — recuadro BLANCO ============ -->
+  <div class="block">
+    <div class="b-head">
+      <div style="display:flex;align-items:center;gap:18px"><span class="num">03</span><span class="ttl">Cinta de obra · Recuadro blanco</span></div>
+      <span class="desc">Mínimo, sobrio. La silueta negra destaca al máximo.</span>
+    </div>
+    <div class="logo-rows">
+      <div class="logo-row dark">
+        <div class="logoB">
+          <div class="left bg-blanco"><img src="assets/obrero.png" alt="Obrero"/></div>
+          <div class="right">
+            <div class="l1">Construcción y Terminaciones</div>
+            <div class="l2">Don Jaime</div>
+            <div class="l3">Combarbalá · Región de Coquimbo</div>
+          </div>
+        </div>
+        <span class="row-meta">Sobre fondo oscuro</span>
+      </div>
+      <div class="logo-row light">
+        <div class="logoB" style="border:2px solid var(--negro)">
+          <div class="left bg-blanco" style="border-right:3px solid var(--negro)"><img src="assets/obrero.png" alt="Obrero"/></div>
+          <div class="right">
+            <div class="l1">Construcción y Terminaciones</div>
+            <div class="l2">Don Jaime</div>
+            <div class="l3">Combarbalá · Región de Coquimbo</div>
+          </div>
+        </div>
+        <span class="row-meta">Sobre fondo claro</span>
+      </div>
+    </div>
+    <div class="fav-strip">
+      <span style="font-family:'Oswald';font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gris);align-self:center;margin-right:8px">Favicon →</span>
+      <div class="fav-item"><div class="fav bg-blanco"><img src="assets/obrero.png" alt=""/></div><div class="lbl">64px</div></div>
+      <div class="fav-item"><div class="fav s32 bg-blanco"><img src="assets/obrero.png" alt=""/></div><div class="lbl">32px</div></div>
+      <div class="fav-item"><div class="fav s16 bg-blanco"><img src="assets/obrero.png" alt=""/></div><div class="lbl">16px</div></div>
+    </div>
+  </div>
+
+  <div class="pick">
+    <h3>¿Cuál elige?</h3>
+    <p>Confírmeme el número de variante (01 naranjo, 02 amarillo, 03 blanco). Aplico la elección en todo el sitio: cabecera, hero, footer, OpenGraph, README y favicons (`favicon.ico` + `favicon.svg` + `apple-touch-icon.png`).</p>
+    <div class="keys">Mi recomendación → 01 (recuadro naranjo) por máxima fidelidad al referente vial</div>
+  </div>
+</div>
+
+</body>
+</html>

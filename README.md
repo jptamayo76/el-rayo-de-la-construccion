@@ -1,6 +1,6 @@
-# El Rayo de la Construcción — Maestro Jaime
+# Construcción y Terminaciones · Don Jaime
 
-Sitio web estático para **Trabajos de Construcción y Terminaciones en General J.G** ("El Rayo de la Construcción"), del Maestro Jaime. Combarbalá, Región de Coquimbo, Chile.
+Sitio web estático para **Trabajos de Construcción y Terminaciones en General J.G**, del Maestro Jaime. Combarbalá, Región de Coquimbo, Chile.
 
 ## Contacto del negocio
 
@@ -17,9 +17,14 @@ Piso flotante · Cerámica · Radier · Puertas y ventanales · Forrados · Pint
 
 ```
 .
-├── index.html          # Sitio completo (HTML + CSS + JS en un archivo)
+├── index.html              # Sitio completo (HTML + CSS + JS en un archivo)
 ├── assets/
-│   └── book/           # Fotos del trabajo del Maestro Jaime
+│   ├── obrero.png          # Silueta del obrero usada en el logo
+│   ├── favicon.svg         # Favicon vectorial
+│   ├── favicon-64.png      # Favicon PNG (fallback)
+│   ├── apple-touch-icon.png# Icono para iOS
+│   ├── og-cover.png        # Imagen para compartir en redes (OpenGraph)
+│   └── book/               # Fotos del trabajo del Maestro Jaime
 └── README.md
 ```
 
@@ -27,18 +32,24 @@ Todo el sitio es **HTML/CSS/JS estático** — no requiere build, ni framework, 
 
 ## Cómo desplegar en GitHub Pages
 
-1. Cree un repositorio en GitHub (por ejemplo `el-rayo-de-la-construccion`).
+1. Cree un repositorio en GitHub (por ejemplo `construccion-don-jaime`).
 2. Suba todos los archivos de este proyecto:
    ```bash
    git init
    git add .
-   git commit -m "Sitio inicial — El Rayo de la Construcción"
+   git commit -m "Sitio inicial — Construcción y Terminaciones Don Jaime"
    git branch -M main
-   git remote add origin https://github.com/USUARIO/el-rayo-de-la-construccion.git
+   git remote add origin https://github.com/USUARIO/construccion-don-jaime.git
    git push -u origin main
    ```
 3. En el repo, ir a **Settings → Pages** y elegir Source: `Deploy from a branch`, Branch: `main`, carpeta: `/ (root)`. Guardar.
-4. En unos minutos, el sitio estará en `https://USUARIO.github.io/el-rayo-de-la-construccion/`.
+4. En unos minutos, el sitio estará en `https://USUARIO.github.io/construccion-don-jaime/`.
+
+## Identidad visual
+
+- **Logo**: "Cinta de obra" — recuadro amarillo seguridad (#F2B705) con la silueta del obrero del letrero vial PI-2 chileno, junto al lockup tipográfico "Construcción y Terminaciones / Don Jaime / Combarbalá · IV Región".
+- **Tipografías**: Oswald (rótulos), Bebas Neue (lockup principal), Source Sans 3 (texto).
+- **Paleta**: Amarillo seguridad #F2B705 · Negro #111111 · Crema #F5F1E8 · Rojo terracota #B23A1F.
 
 ## Personalización rápida
 
